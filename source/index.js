@@ -1,6 +1,7 @@
 const { spawn } = require(`child_process`)
 const args = require(`options-to-args`)
 
-const factory = require(`./factory`).bind(null, { spawn, args })
-
-module.exports = factory
+module.exports = Object.assign(
+  require(`./bound-spawn`).bind(null, { spawn, args }),
+  args
+)

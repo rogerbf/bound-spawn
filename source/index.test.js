@@ -1,5 +1,5 @@
-import boundSpawn from './index'
+const spawn = require(`./index`)
 
-test(`boundSpawn is defined`, () => {
-  expect(boundSpawn).toBeDefined()
+it(`is a function`, () => {
+  expect(typeof (spawn)).toBe(`function`)
 })
