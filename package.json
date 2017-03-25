@@ -1,7 +1,7 @@
 {
   "name": "bound-spawn",
-  "version": "0.0.1",
-  "description": "",
+  "version": "2.0.0",
+  "description": "bind child_process.spawn to a command and configuration",
   "main": "./distribution/index.js",
   "scripts": {
     "test": "jest --config .jest",
@@ -18,7 +18,11 @@
     "coverage": "jest --config .jest --coverage",
     "watch:coverage": "jest --config .jest --coverage --watch"
   },
-  "keywords": [],
+  "keywords": [
+    "spawn",
+    "child process",
+    "child_process"
+  ],
   "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
   "license": "MIT",
   "devDependencies": {
